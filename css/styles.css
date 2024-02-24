@@ -315,6 +315,12 @@ gap: 40px;
   .hero {
     max-width: 768px;
     padding: 112px 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-tab-1x.jpg);
   }
 
   .hero-title {
@@ -341,6 +347,12 @@ gap: 40px;
   .hero {
     max-width: 1440px;
     padding: 188px 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   }
 
  .hero-title {
@@ -586,9 +598,8 @@ gap: 40px;
 }
 
 .portfolio-list-item {
-  width: 288px;
   position: relative;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -647,7 +658,7 @@ gap: 40px;
   }
 
   .portfolio-list-item {
-    max-width: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 /* ================= */
@@ -655,8 +666,7 @@ gap: 40px;
 /* === PORTFOLIO for DESKTOP === */
 @media screen and (min-width: 1158px) {
   .portfolio-list-item {
-    max-width: calc((100% - 48px) / 3);
-    min-width: 360px;
+    width: calc((100% - 48px) / 3);
     flex-wrap: wrap;
     box-shadow: none;
   }
@@ -805,6 +815,7 @@ gap: 40px;
 
   .footer-container {
     align-items: baseline;
+    gap: 0;
   }
 
   .footer-logo-text {
@@ -849,7 +860,6 @@ text-align: center;
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
-  opacity: 0.3;
 }
 
 .subscribe-input::placeholder {
@@ -939,10 +949,9 @@ margin-left: 16px;
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 72px 16px 16px 16px;
+  padding: 72px 16px 24px 16px;
   transform: translate(-50%, -50%) scale(1);
   width: calc(100% - 32px);
-  height: calc(100% - 16px);
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -1175,6 +1184,7 @@ margin-left: 16px;
   padding: 72px 16px 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1216,7 +1226,7 @@ margin-left: 16px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 
 .mobile-nav-link {
